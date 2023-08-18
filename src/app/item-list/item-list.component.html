@@ -1,0 +1,12 @@
+<div class="item-list">
+    <div *ngFor="let item of items" class="item-card">
+        <div class="item-image">
+            <!-- <img [src]="item.imageUrl" alt="Item Image"> -->
+            <img src="{{item.url}}" alt="Item Image">
+        </div>
+        <div class="item-details">
+            <div class="item-name">{{ item.itemName }}</div>
+            <div class="item-price">&#36; {{ item.itemPrice }}</div>
+        </div>
+    </div>
+</div>
